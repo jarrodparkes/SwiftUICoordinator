@@ -10,11 +10,11 @@ import SwiftUI
 @main
 struct SwiftUICoordinatorApp: App {
     
-    let coordinator = Coordinator2()
+    let coordinator = Coordinator1()
     
     var body: some Scene {
         WindowGroup {
-            ContentView2(coordinator: coordinator)
+            ContentView1(coordinator: coordinator)
         }
     }
 }

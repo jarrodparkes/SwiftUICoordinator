@@ -11,10 +11,7 @@ struct ContentView2: View {
     @ObservedObject var coordinator: Coordinator2
     
     var body: some View {
-        NavigationView {
-            Text("fart")
-                .navigationBarTitle("Hello", displayMode: .inline)
-        }
+        coordinator.body
     }
 }
 

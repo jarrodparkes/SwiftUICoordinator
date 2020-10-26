@@ -1,5 +1,5 @@
 //
-//  ScreenType.swift
+//  ScreenType1.swift
 //  SwiftUICoordinator
 //
 //  Created by Jarrod Parkes on 10/26/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum ScreenType {
+enum ScreenType1 {
     case red
     case blue
     case purple

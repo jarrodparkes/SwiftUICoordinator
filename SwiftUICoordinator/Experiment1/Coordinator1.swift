@@ -11,7 +11,7 @@ import SwiftUI
 class Coordinator1: ObservableObject {
     let objectWillChange = PassthroughSubject<Coordinator1,Never>()
     
-    var screenType: ScreenType {
+    var screenType: ScreenType1 {
         didSet {
             withAnimation() {
                 objectWillChange.send(self)
@@ -31,7 +31,7 @@ class Coordinator1: ObservableObject {
         screenType = computeNextType()
     }
     
-    private func computePreviousType() -> ScreenType {
+    private func computePreviousType() -> ScreenType1 {
         switch screenType {
         case .red:
             return .purple
@@ -42,7 +42,7 @@ class Coordinator1: ObservableObject {
         }
     }
     
-    private func computeNextType() -> ScreenType {
+    private func computeNextType() -> ScreenType1 {
         switch screenType {
         case .red:
             return .blue
